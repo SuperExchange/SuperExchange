@@ -5,11 +5,11 @@ const Nav = () => {
     <div className="navBar">
         <h1><span>Super</span>Exchange</h1>
         <div>
-        <Link path="/">Dashboard</Link>
-        <Link path="/stock">Stock</Link>
-        <Link path="/forex">Forex</Link>
-        <Link path="/crypto">Crypto</Link>
-        <Link path="/news">News</Link>
+        <Link to="/">Dashboard</Link>
+        <Link to="/stock">Stock</Link>
+        <Link to="/forex">Forex</Link>
+        <Link to="/crypto">Crypto</Link>
+        <Link to="/news">News</Link>
         </div>
         <img src="../img/icons/arrows-left.svg" alt="" />
     </div> );
