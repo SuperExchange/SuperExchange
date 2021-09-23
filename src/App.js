@@ -15,10 +15,8 @@ import News from './pages/News';
 //https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=15min&apikey=demo
 
 
-//
-//
-
-//pk_19eb5443c7244616ab173956de5bdd34 
+//IEX pk_19eb5443c7244616ab173956de5bdd34 
+//AV Andi API Key: 9RW257WPI2WCJBBF
 
 function App() {
     return (
