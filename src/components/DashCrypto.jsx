@@ -1,6 +1,6 @@
 const DashCrypto = () => {
     return ( <div>
-        
+        DashCrypto
     </div> );
 }
  

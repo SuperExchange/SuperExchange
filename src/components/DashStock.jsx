@@ -1,6 +1,6 @@
 const DashStock = () => {
     return ( <div>
-        
+        DashStock
     </div> );
 }
 

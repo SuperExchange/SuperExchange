@@ -4,26 +4,31 @@ import DashCrypto from "../components/DashCrypto";
 import DashNews from "../components/DashNews";
 
 const DashBoard = () => {
-    return ( 
+    return (
         <div className="dashboard">
             <header>
                 <h2>DashBoard</h2>
-                <p>With all of the styling tool options available in today’s market</p>
+                <p>
+                    With all of the styling tool options available in today’s
+                    market
+                </p>
             </header>
-            <div>
-                <DashStock />
-            </div>
-            <div>
-                <DashForex />
-            </div>
-            <div>
-                <DashCrypto />
-            </div>
-            <div>
-                <DashNews />
-            </div>
+            <section>
+                <div className="DashboardElement">
+                    <DashStock />
+                </div>
+                <div className="DashboardElement">
+                    <DashForex />
+                </div>
+                <div className="DashboardElement">
+                    <DashCrypto />
+                </div>
+                <div className="DashboardElement">
+                    <DashNews />
+                </div>
+            </section>
         </div>
-     );
-}
+    );
+};
 
 export default DashBoard;

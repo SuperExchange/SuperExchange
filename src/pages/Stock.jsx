@@ -1,7 +1,7 @@
 const Stock = () => {
     return ( 
         <div>
-            asdkfjlasdfkj
+            Stock
         </div>
      );
 }
