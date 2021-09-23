@@ -7,6 +7,7 @@
     width: 20vw;
     height: 100vh;
     background-color: grey;
+    float: left;
 }
 
 .navBar>h1{

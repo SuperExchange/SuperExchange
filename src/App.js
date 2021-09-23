@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Nav from './pages/Nav';
 import DashBoard from './pages/DashBoard';
+import Stock from './pages/Stock';
 
 //For Graph
 //https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=15min&apikey=demo
@@ -23,6 +24,7 @@ function App() {
         <Nav />
         <Switch>
           <Route to="/" exact component={DashBoard} />
+          <Route to="/stock" exact component={Stock} />
         </Switch>
       </Router>
     </div>

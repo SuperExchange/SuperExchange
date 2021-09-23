@@ -1,9 +1,29 @@
+import DashForex from "../components/DashForex";
+import DashStock from "../components/DashStock";
+import DashCrypto from "../components/DashCrypto";
+import DashNews from "../components/DashNews";
+
 const DashBoard = () => {
     return ( 
-        <div>
-            
+        <div className="dashboard">
+            <header>
+                <h2>DashBoard</h2>
+                <p>With all of the styling tool options available in today’s market</p>
+            </header>
+            <div>
+                <DashStock />
+            </div>
+            <div>
+                <DashForex />
+            </div>
+            <div>
+                <DashCrypto />
+            </div>
+            <div>
+                <DashNews />
+            </div>
         </div>
      );
 }
- 
+
 export default DashBoard;
