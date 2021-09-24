@@ -7,6 +7,7 @@ class Plotly extends React.Component {
     render() { 
         return ( 
             <div>
+                
                 <Plot data={[
                     {type: "scatter",
                         x:["10:59 PM", "11:59 PM", "12:59 AM", "1:59 AM", "2:59 AM", "3:59AM","4:59AM", "5:59AM", "6:59AM", "7:59AM"],
@@ -28,7 +29,7 @@ class Plotly extends React.Component {
                         name: "LTC"
                     }
                 ]}
-                    layout={{width:1000, height:900, title: "Nike"}}
+                    layout={{width:1000, height:600}}
                 />
             </div>
         );
