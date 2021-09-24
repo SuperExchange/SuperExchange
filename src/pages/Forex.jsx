@@ -6,8 +6,10 @@ class Forex extends React.Component {
         this.state = {
             currency: null,
             rate: 0,
-            currencyFrom: "",
-            currencyTo: "",
+            currencyFromString: "",
+            currencyToString: "",
+            currencyFrom: 0,
+            currencyTo: 0,
             exchange: 0,
             isLoading: true
         }
@@ -20,22 +22,18 @@ class Forex extends React.Component {
         this.setState({ currency: data });
 
         // this is the offline version
-        /* 
-        "1. From_Currency Code": "USD",
-        "3. To_Currency Code": "EUR",
-        "5. Exchange Rate": "0.85140000", */
-
         let element = this.state.currency["Realtime Currency Exchange Rate"];
-        this.setState({ currencyFrom: element["From_Currency Code"] });
-        this.setState({ currencyTo: element["To_Currency Code"] });
-        this.setState({ exchange: element["Exchange Rate"] });
-        this.setState({ isloading: false });
+        this.setState({ currencyFromString: element["1. From_Currency Code"] });
+        this.setState({ currencyToString: element["3. To_Currency Code"] });
+        this.setState({ exchange: element["5. Exchange Rate"] });
     }
-    handleChangeFromCurrency() {
-        
+    handleChangeFromCurrency(state) {
+        let from = document.getElementsByClassName("forexInput")[0].value
+        document.getElementsByClassName("forexInput")[1].value = from * state
     }
-    handleChangeToCurrency() {
-
+    handleChangeToCurrency(state) {
+        let from = document.getElementsByClassName("forexInput")[1].value
+        document.getElementsByClassName("forexInput")[0].value = from / state
     }
     render() {
         return (
@@ -46,16 +44,15 @@ class Forex extends React.Component {
                     <div className="forex_container">
                         <div>
                             <p>Amount</p>
-                            <input
-                                type="text"
-                                value={this.state.fromCurrency}
-                                onChange={this.handleChangeFromCurrency}
+                            <input className="forexInput"
+                                type="number"
+                                onChange={() => this.handleChangeFromCurrency(this.state.exchange)}
                             />
                         </div>
                         <div>
                             <p>from</p>
                             <img className="currencyFlag" src="../img/flags/us.svg" alt="" />
-                            <p>Currency From</p>
+                            <p>{this.state.currencyFromString}</p>
                         </div>
                         <div>
                             <img className="currencyIcon" src="../img/icons/arrow-combined.svg" alt="" />
@@ -63,14 +60,13 @@ class Forex extends React.Component {
                         <div>
                             <p>in</p>
                             <img className="currencyFlag" src="../img/flags/eu.svg" alt="" />
-                            <p>Currency To</p>
+                            <p>{this.state.currencyToString}</p>
                         </div>
                         <div>
                             <p>Amount</p>
-                            <input
-                                type="text"
-                                value={this.state.toCurrency}
-                                onChange={this.handleChangeToCurrency}
+                            <input className="forexInput"
+                                type="number"
+                                onChange={() => this.handleChangeToCurrency(this.state.exchange)}
                             />
                         </div>
                     </div>
