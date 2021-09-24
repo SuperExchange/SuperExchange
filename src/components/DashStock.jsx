@@ -1,7 +1,9 @@
 const DashStock = () => {
-    return ( <div>
-        DashStock
-    </div> );
+    return (
+        <div>
+            DashStock
+        </div>
+    );
 }
 
 export default DashStock;
