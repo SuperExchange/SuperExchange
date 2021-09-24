@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import "../css/DashStock.css";
 
 import React from "react";
@@ -78,14 +77,6 @@ class DashStock extends React.Component {
             </div>
         );
     }
-=======
-const DashStock = () => {
-    return (
-        <div>
-            DashStock
-        </div>
-    );
->>>>>>> 82752de458960fbf2b0049d4db85cc2a6d0d9dac
 }
 
 export default DashStock;
