@@ -15,6 +15,6 @@
 .DashStockGrid p:not(:first-of-type) {
     text-align: Right;
 }
-.DashStockElement:nth-of-type(odd) {
+.DashStockElement:nth-of-type(even) {
     background: #fef8f8;
 }
