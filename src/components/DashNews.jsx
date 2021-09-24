@@ -1,7 +1,9 @@
+import New from "../pages/News";
 const DashNews = () => {
     return (
-        <div>
-            DashNews
+        <div className="News">
+            <h1> News </h1>
+            <New/>
         </div>
     );
 }
