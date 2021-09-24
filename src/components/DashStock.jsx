@@ -61,9 +61,9 @@ class DashStock extends React.Component {
             <div className="DashStock">
                 {/* display as grid */}
                 <div className="DashStockGrid DashStockGridHeader">
-                    <p>Name</p>
-                    <p>Watchlist</p>
                     <p>Symbol</p>
+                    <p>Watchlist</p>
+                    <p>Market Overview</p>
                 </div>
 
                 {this.state.watchList.map((element) => (
