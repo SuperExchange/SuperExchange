@@ -19,3 +19,8 @@
     width: 3vw;
     border-radius: 50%;
 }
+.News{
+    background-color: gray;
+    text-align: center;
+    margin: 2% 5% 0% 60%;
+}
