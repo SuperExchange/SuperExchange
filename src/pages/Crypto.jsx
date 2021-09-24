@@ -1,7 +1,9 @@
 const Crypto = () => {
-    return ( <div>
-        Crypto
-    </div> );
+    return (
+        <div>
+            Crypto
+        </div>
+    );
 }
- 
+
 export default Crypto;

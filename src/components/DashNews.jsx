@@ -1,7 +1,9 @@
 const DashNews = () => {
-    return ( <div>
-        DashNews
-    </div> );
+    return (
+        <div>
+            DashNews
+        </div>
+    );
 }
 
 export default DashNews;
