@@ -1,7 +1,9 @@
+import Plotly from "../components/PlotlyTest";
+import React from "react";
 const Stock = () => {
     return ( 
         <div>
-            Stock
+            <Plotly />
         </div>
      );
 }
