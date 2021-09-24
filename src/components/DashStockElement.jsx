@@ -63,7 +63,11 @@ class DashStockElement extends React.Component {
                 {this.state.loaded && (
                     <div className="DashStockGrid">
                         <p>{this.state.name}</p>
-                        <p>{Math.floor(this.state.price * this.state.count)}</p>
+                        <p>
+                            {Math.floor(
+                                this.state.price * this.state.count
+                            ).toLocaleString()}
+                        </p>
                         <p
                             style={
                                 this.state.change > 0
@@ -73,7 +77,10 @@ class DashStockElement extends React.Component {
                                     : { color: "#333" }
                             }
                         >
-                            {this.state.change}%
+                            {Number(this.state.change)
+                                .toFixed(2)
+                                .toLocaleString()}{" "}
+                            &nbsp;%
                         </p>
                     </div>
                 )}
