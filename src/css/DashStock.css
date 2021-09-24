@@ -1,0 +1,20 @@
+.DashStockGrid {
+    color: #333;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    padding: 0.5rem 2rem;
+}
+.DashStockGridHeader {
+    font-size: 1.2em;
+    font-weight: 900;
+    border-bottom: 1px solid black;
+}
+.DashStockGrid p:first-of-type {
+    text-align: left;
+}
+.DashStockGrid p:not(:first-of-type) {
+    text-align: Right;
+}
+.DashStockElement:nth-of-type(odd) {
+    background: #fef8f8;
+}

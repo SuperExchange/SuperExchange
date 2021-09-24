@@ -1,8 +1,9 @@
 const DashNews = () => {
-    return ( <div>
-        
-        hallo
-    </div> );
+    return (
+        <div>
+            DashNews
+        </div>
+    );
 }
 
 export default DashNews;

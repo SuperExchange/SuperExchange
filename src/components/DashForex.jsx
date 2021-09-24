@@ -1,7 +1,9 @@
 const DashForex = () => {
-    return ( <div>
-        DashForex
-    </div> );
+    return (
+        <div>
+            DashForex
+        </div>
+    );
 }
 
 export default DashForex;
