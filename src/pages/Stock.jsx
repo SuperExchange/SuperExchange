@@ -1,4 +1,4 @@
-import Plotly from "../components/PlotlyTest";
+import Plotly from '../components/Plotly'
 import React from "react";
 const Stock = () => {
     return ( 

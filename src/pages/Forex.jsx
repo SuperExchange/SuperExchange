@@ -6,8 +6,9 @@ class Forex extends React.Component {
         this.state = {
             currency: null,
             rate: 0,
-            fromCurrency: "",
-            toCurrency: "",
+            currencyFrom: "",
+            currencyTo: "",
+            exchange: 0,
             isLoading: true
         }
     }
@@ -17,9 +18,21 @@ class Forex extends React.Component {
         const response = await fetch(url);
         const data = await response.json();
         this.setState({ currency: data });
+
+        // this is the offline version
+        /* 
+        "1. From_Currency Code": "USD",
+        "3. To_Currency Code": "EUR",
+        "5. Exchange Rate": "0.85140000", */
+
+        let element = this.state.currency["Realtime Currency Exchange Rate"];
+        this.setState({ currencyFrom: element["From_Currency Code"] });
+        this.setState({ currencyTo: element["To_Currency Code"] });
+        this.setState({ exchange: element["Exchange Rate"] });
+        this.setState({ isloading: false });
     }
     handleChangeFromCurrency() {
-
+        
     }
     handleChangeToCurrency() {
 
@@ -30,7 +43,7 @@ class Forex extends React.Component {
                 {!this.isLoading && <div className="forex">
                     <h2>Forex</h2>
                     <p>Want to kow how much is your money in other currenciest?</p>
-                    <div className="forex-container">
+                    <div className="forex_container">
                         <div>
                             <p>Amount</p>
                             <input
@@ -61,7 +74,7 @@ class Forex extends React.Component {
                             />
                         </div>
                     </div>
-                    <p>The Exchange Rate is </p>
+                    <p>The Exchange Rate is {this.state.exchange}</p>
                 </div>}
             </div>
         );

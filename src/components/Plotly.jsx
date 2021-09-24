@@ -1,4 +1,3 @@
-import { plot } from "plotly.js";
 import React from "react";
 import Plot from "react-plotly.js";
 
