@@ -1,11 +1,11 @@
 import DashNews from "../components/DashNews";
-
-const News = () => {
+import News from "../components/news";
+const New = () => {
     return (
     <div>
-      <DashNews />
+      <News />
     </div>
     );
 }
 
-export default News;
+export default New;
