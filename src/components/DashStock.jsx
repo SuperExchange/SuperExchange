@@ -3,48 +3,14 @@ import "../css/DashStock.css";
 import React from "react";
 import DashStockElement from "./DashStockElement";
 
+import globalWatchList from "../data/watchList.json";
+
 // const ApiKey = "ZCTSJTWC75K141H9";
 // const Search = "tesla";
 
 class DashStock extends React.Component {
     state = {
-        watchList: [
-            {
-                name: "Apple Inc",
-                symbol: "AAPL",
-                count: Math.floor(Math.random() * 100) + 1,
-            },
-            {
-                name: "Blackrock Inc",
-                symbol: "BLK",
-                count: Math.floor(Math.random() * 100) + 1,
-            },
-            {
-                name: "Cisco Systems",
-                symbol: "CSCO",
-                count: Math.floor(Math.random() * 100) + 1,
-            },
-            {
-                name: "IBM International",
-                symbol: "IBM",
-                count: Math.floor(Math.random() * 100) + 1,
-            },
-            {
-                name: "Microsoft Corp",
-                symbol: "MSFT",
-                count: Math.floor(Math.random() * 100) + 1,
-            },
-            {
-                name: "MSCI Inc.",
-                symbol: "MSCI",
-                count: Math.floor(Math.random() * 100) + 1,
-            },
-            {
-                name: "Tesla",
-                symbol: "TSLA",
-                count: Math.floor(Math.random() * 100) + 1,
-            },
-        ],
+        watchList: [...globalWatchList],
     };
 
     // componentDidMount() {
@@ -71,7 +37,7 @@ class DashStock extends React.Component {
                         key={element.symbol}
                         name={element.name}
                         symbol={element.symbol}
-                        count={element.count}
+                        count={Math.floor(Math.random() * 1000) + 1}
                     />
                 ))}
             </div>

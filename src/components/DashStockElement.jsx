@@ -1,5 +1,6 @@
 import React from "react";
-import watchListData from "../data/watchList.json";
+import { Link } from "react-router-dom";
+import watchListData from "../data/globalQuoteList.json";
 
 // const ApiKey = "ZCTSJTWC75K141H9";
 // const Search = "tesla";
@@ -67,7 +68,10 @@ class DashStockElement extends React.Component {
         return (
             <div className="DashStockElement">
                 {this.state.loaded && (
-                    <div className="DashStockGrid">
+                    <Link
+                        to={"/stock/" + this.state.symbol}
+                        className="DashStockGrid"
+                    >
                         <p>{this.state.name}</p>
                         <p>
                             {Math.floor(
@@ -88,7 +92,7 @@ class DashStockElement extends React.Component {
                                 .toLocaleString()}{" "}
                             &nbsp;%
                         </p>
-                    </div>
+                    </Link>
                 )}
             </div>
         );
