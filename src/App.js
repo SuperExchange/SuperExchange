@@ -18,7 +18,8 @@ function App() {
                 <Nav />
                 <Switch>
                     <Route path="/" exact component={DashBoard} />
-                    <Route path="/stock" component={Stock} />
+                    <Route path="/stock" component={Stock} exact />
+                    <Route path="/stock/:symbol" component={Stock} />
                     <Route path="/forex" component={Forex} />
                     <Route path="/crypto" component={Crypto} />
                     <Route path="/news" component={News} />
