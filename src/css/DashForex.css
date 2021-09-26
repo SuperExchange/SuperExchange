@@ -2,7 +2,6 @@
     border-bottom: 1px solid black;
     color: #53b9ea;
 }
-
 .DashForexGrid {
     padding: 0.5rem 2rem;
     display: grid;
@@ -10,7 +9,6 @@
     align-items: center;
     justify-items: center;
 }
-
 .DashForexFlag {
     width: 2rem;
     height: 2rem;

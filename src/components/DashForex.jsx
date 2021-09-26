@@ -92,9 +92,9 @@ class DashForex extends React.Component {
             exch[i].rates = [...rates];
         }
 
-        for (let i = 0; i < exch.length; i++) {
-            console.log(i, exch[i]);
-        }
+        // for (let i = 0; i < exch.length; i++) {
+        //     console.log(i, exch[i]);
+        // }
 
         return exch;
     };

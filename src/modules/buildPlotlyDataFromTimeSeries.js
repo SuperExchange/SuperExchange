@@ -1,17 +1,16 @@
 function buildPlotlyDataFromTimeSeries(timeSeriesData) {
 
+    if (Object.keys(timeSeriesData).length === 0) { return []; }
+
     const times = [];
     const open = [];
-    // const price = [];
     const high = [];
     const low = [];
     const close = [];
 
     timeSeriesData.data.forEach(timeSerie => {
-        // console.log(timeSerie);
         times.push(timeSerie.time);
         open.push(timeSerie.open);
-        // price.push(timeSerie.price);
         high.push(timeSerie.high);
         low.push(timeSerie.low);
         close.push(timeSerie.close);
@@ -24,12 +23,6 @@ function buildPlotlyDataFromTimeSeries(timeSeriesData) {
             y: [...open],
             name: "Open"
         },
-        // {
-        //     type: "scatter",
-        //     x: [...times],
-        //     y: [...price],
-        //     name: "Price"
-        // },
         {
             type: "scatter",
             x: [...times],
