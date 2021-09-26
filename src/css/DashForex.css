@@ -1,0 +1,25 @@
+.DashForexHeader {
+    border-bottom: 1px solid black;
+    color: #53b9ea;
+}
+
+.DashForexGrid {
+    padding: 0.5rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: end;
+    align-items: center;
+}
+
+.DashForexGridHeaderItem {
+    font-size: 1.2em;
+    font-weight: 900;
+    border-bottom: 1px solid black;
+    color: #53b9ea;
+}
+
+.DashForexFlag {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+}

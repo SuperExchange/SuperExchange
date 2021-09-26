@@ -16,7 +16,7 @@ function convertTimeSeries2Array(timeSeriesData) {
             "high": Number(objectTimeSeries[time]["2. high"]),
             "low": Number(objectTimeSeries[time]["3. low"]),
             "close": Number(objectTimeSeries[time]["4. close"]),
-            "volume": Number(objectTimeSeries[time]["5. volume"])
+            // "price": Number(objectTimeSeries[time]["5. price"])
         };
         timeSeries.push(timeSerie);
     });
@@ -24,10 +24,6 @@ function convertTimeSeries2Array(timeSeriesData) {
     return {
         metaData, data: [...timeSeries]
     };
-}
-
-function test2() {
-    return "hallo";
 }
 
 export default convertTimeSeries2Array;

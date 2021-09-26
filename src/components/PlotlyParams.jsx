@@ -20,6 +20,7 @@ class PlotlyParams extends React.Component {
                     data={[...this.state.plotlyData]}
                     layout={{
                         title: `Last Update: ${this.state.lastRefreshed}`,
+                        orientation: "h",
                     }}
                     // layout={{ width: "200%", height: "80%", title: "hallo" }}
                 />
