@@ -7,11 +7,11 @@ const DashForexItem = (props) => {
                     background: `url(/img/flags/${props.data.countryCode.toLowerCase()}.svg) center/cover`,
                 }}
             />
-            <p>{}xxx</p>
-            <p>xxx</p>
-            <p>xxx</p>
-            <p>xxx</p>
-            <p>xxx</p>
+            {props.data.rates.map((rate) => (
+                <p style={{ color: Number(rate) === 1 ? "#333" : "#53B9EA" }}>
+                    {rate}
+                </p>
+            ))}
         </div>
     );
 };
