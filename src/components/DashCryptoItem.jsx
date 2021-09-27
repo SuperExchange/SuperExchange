@@ -17,7 +17,7 @@ class DashCryptoItem extends Component {
                         {Number(this.state.exchange)
                             .toFixed(2)
                             .toLocaleString()}{" "}
-                        &nbsp;%
+                        &nbsp;$
                     </p>
                 </div>
             </div>
