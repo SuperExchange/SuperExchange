@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.navBar {
+/* .navBar {
     width: 20vw;
     height: 100vh;
     background-color: grey;
@@ -13,7 +13,7 @@
 .navBar > h1 {
     text-align: center;
     font-size: 2vw;
-}
+} */
 
 .forex img {
     width: 3vw;

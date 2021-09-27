@@ -1,3 +1,13 @@
+@font-face {
+    font-family: AvenirFett;
+    src: url("./fonts/Avenir/AvenirFett.otf");
+  }
+
+  @font-face {
+    font-family: AvenirNorm;
+    src: url("./fonts/Avenir/AvenirNormal.otf");
+  }
+
 .DashStockGrid {
     color: #333;
     display: grid;
@@ -8,10 +18,16 @@
     font-size: 1.2em;
     font-weight: 900;
     border-bottom: 1px solid black;
+    font-family: AvenirNorm;
 }
 .DashStockGrid p:first-of-type {
     text-align: left;
 }
+
+.DashStockGrid p:nth-child(2){
+    text-align: center;
+}
+
 .DashStockGrid p:not(:first-of-type) {
     text-align: Right;
 }

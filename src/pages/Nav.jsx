@@ -1,13 +1,18 @@
 import { Link } from "react-router-dom";
+import '../css/Nav.css'
 
 const Nav = () => {
     return (
         <div className="navBar">
             <h1>
-                <span>Super</span>Exchange
+                <div class="divLogo">
+                    <img src="../img/icons/logo.jpg" alt="Logo" id="logoPic" />
+                    <span id="super">Super</span>Exchange
+                </div>
             </h1>
-            <div>
-                <div>
+
+            <div class="divLink">
+                <div >
                     <Link to="/" className="NavLink">
                         <img
                             src="../img/icons/dashboard.svg"
@@ -54,7 +59,7 @@ const Nav = () => {
                             alt="Dashboard"
                             className="NavLinkImage"
                         />
-                        News
+                        <span className="NavLinkText">News</span>
                     </Link>
                 </div>
             </div>

@@ -76,15 +76,15 @@ class DashStockElement extends React.Component {
                         <p>
                             {Math.floor(
                                 this.state.price * this.state.count
-                            ).toLocaleString()}
+                            ).toLocaleString()} $
                         </p>
                         <p
                             style={
                                 this.state.change > 0
                                     ? { color: "#78CBBB" }
                                     : this.state.change < 0
-                                    ? { color: "#FF3165" }
-                                    : { color: "#333" }
+                                        ? { color: "#FF3165" }
+                                        : { color: "#333" }
                             }
                         >
                             {Number(this.state.change)

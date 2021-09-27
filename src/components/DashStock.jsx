@@ -4,6 +4,7 @@ import React from "react";
 import DashStockElement from "./DashStockElement";
 
 import globalWatchList from "../data/watchList.json";
+import "../css/DashBoard.css"
 
 // const ApiKey = "ZCTSJTWC75K141H9";
 // const Search = "tesla";
