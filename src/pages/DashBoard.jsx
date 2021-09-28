@@ -9,7 +9,7 @@ const DashBoard = () => {
     return (
         <div className="dashboard">
             <header>
-                <h2>DashBoard</h2>
+                <h2 id="dashboardHeader">DashBoard</h2>
                 <p id="text">
                     With all of the styling tool options available in today’s
                     market

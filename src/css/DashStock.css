@@ -1,8 +1,14 @@
+@font-face {
+    font-family: AvenirNorm;
+    src: url("./fonts/Avenir/AvenirNormal.otf");
+}
+
 .DashStockGrid {
     color: #333;
     display: grid;
     grid-template-columns: 3fr 1fr 1fr;
     padding: 0.5rem 2rem;
+    font-family: AvenirNorm;
 }
 .DashStockGridHeader {
     font-size: 1.2em;

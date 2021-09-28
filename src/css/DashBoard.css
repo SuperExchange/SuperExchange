@@ -1,11 +1,19 @@
+.dashboard{
+    margin-top: 50px;
+    margin-left: 70px;
+}
 
-h2 {
-    color: #4c4c66;
-    font-size: 1.7em;
+#dashboardHeader{
+    color: #4C4C66;
+    font-size: 1.9em;
 }
 
 #text {
     color: #6f6c99;
+}
+
+.dashboard{
+    width: 70vw;
 }
 
 section {
