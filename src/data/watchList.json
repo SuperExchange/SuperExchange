@@ -26,5 +26,9 @@
     {
         "name": "Tesla",
         "symbol": "TSLA"
+    },
+    {
+        "name": "Astra Space Inc",
+        "symbol": "ASTR"
     }
 ]
