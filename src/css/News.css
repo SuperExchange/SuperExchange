@@ -1,3 +1,15 @@
-.news {
+.news>div{
     width: 70vw;
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 5%;
+    padding: 5% 5%;
+}
+
+.newsItem h2, h4{
+    padding-bottom: 3%;
+}
+.newsItem h4:last-of-type{
+    padding-bottom: 6%;
 }
