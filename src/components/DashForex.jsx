@@ -4,7 +4,7 @@ import React from "react";
 import DashForexHeader from "./DashForexHeader";
 import DashForexItem from "./DashForexItem";
 
-const ApiKey = "ZCTSJTWC75K141H9";
+// const ApiKey = "ZCTSJTWC75K141H9";
 
 class DashForex extends React.Component {
     constructor(props) {

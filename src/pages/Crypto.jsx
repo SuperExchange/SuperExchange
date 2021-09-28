@@ -1,4 +1,5 @@
-import Plotly from '../components/Plotly'
+import Plotly from '../components/Plotly';
+
 
 const Crypto = () => {
     return (
