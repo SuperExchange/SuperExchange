@@ -16,6 +16,11 @@
     text-align: Right;
 }
 
+.DashCryptoGrid img {
+    height: 2rem;
+    width: 2rem;
+}
+
 .DashCryptoItem a {
     text-decoration: none;
 }

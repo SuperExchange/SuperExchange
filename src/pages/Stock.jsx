@@ -110,7 +110,7 @@ class Stock extends Component {
             <div className="Stock">
                 <div className="StockHeader">
                     <div className="StockHeaderTitle">
-                        <h1>Stock</h1>
+                        <h2>Stock</h2>
                         <p>
                             With all of the styling tool options available in
                             today’s market
@@ -129,26 +129,27 @@ class Stock extends Component {
                         </button>
                     </div>
                 </div>
-
-                <div className="StockData">
-                    <h2>
-                        {this.state.loaded &&
-                            `${this.state.watchListEntry.name} (${this.state.watchListEntry.symbol})`}
-                        {!this.state.loaded && "No data available"}
-                    </h2>
+                <div className="StockDataContainer">
+                    <div className="StockData">
+                        <h2>
+                            {this.state.loaded &&
+                                `${this.state.watchListEntry.name} (${this.state.watchListEntry.symbol})`}
+                            {!this.state.loaded && "No data available"}
+                        </h2>
+                    </div>
+                    {this.state.loaded && (
+                        <PlotlyParams
+                            lastRefreshed={
+                                this.state.loaded
+                                    ? this.state.timeSeries.metaData[
+                                    "3. Last Refreshed"
+                                    ]
+                                    : ""
+                            }
+                            data={this.state.plotlyData}
+                        />
+                    )}
                 </div>
-                {this.state.loaded && (
-                    <PlotlyParams
-                        lastRefreshed={
-                            this.state.loaded
-                                ? this.state.timeSeries.metaData[
-                                      "3. Last Refreshed"
-                                  ]
-                                : ""
-                        }
-                        data={this.state.plotlyData}
-                    />
-                )}
             </div> // end
         );
     }

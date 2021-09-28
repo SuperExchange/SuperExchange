@@ -1,3 +1,5 @@
+const { uuid } = require('uuidv4');
+
 const DashForexItem = (props) => {
     return (
         <div className="DashForexItem DashForexGrid">
@@ -8,7 +10,7 @@ const DashForexItem = (props) => {
                 }}
             />
             {props.data.rates.map((rate) => (
-                <p style={{ color: Number(rate) === 1 ? "#333" : "#53B9EA" }}>
+                <p key={uuid} style={{ color: Number(rate) === 1 ? "#333" : "#53B9EA" }}>
                     {rate}
                 </p>
             ))}

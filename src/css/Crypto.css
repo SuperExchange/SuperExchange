@@ -1,8 +1,17 @@
 .crypto {
-    width: 70vw;
+    width: 80vw;
+    padding: 3% 0 0 5%;
 }
-.crypto h1 {
-    padding: 5% 0 0 5%;
+.cryptoHeader>h2{
+    color: #4C4C66;
+    font-size: 1.9em;
+    padding-bottom: 10px;
+}
+
+.cryptoHeader>p{
+    color: #6F6C99;
+    font-size: 0.9em;
+    padding-bottom: 25%;
 }
 
 @media(max-width:414px){

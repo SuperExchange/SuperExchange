@@ -40,8 +40,10 @@ class Forex extends React.Component {
         return (
             <div>
                 {!this.isLoading && <div className="forex">
-                    <h2>Forex</h2>
-                    <p>Want to kow how much is your money in other currenciest?</p>
+                    <div className="forexHeader">
+                        <h2>Forex</h2>
+                        <p>Want to kow how much is your money in other currenciest?</p>
+                    </div>
                     <div className="forex_container">
                         <div className="amount1">
                             <p className="Amount">Amount</p>
@@ -58,7 +60,7 @@ class Forex extends React.Component {
                         <div>
                             <img className="currencyIcon" src="../img/icons/arrow-combined.svg" alt="" />
                         </div>
-                        <div>
+                        <div className="contentFlags">
                             <p>in</p>
                             <img className="currencyFlag" src="../img/flags/eu.svg" alt="" />
                             <p className="forexCurriency">{this.state.currencyToString}</p>
@@ -71,7 +73,7 @@ class Forex extends React.Component {
                             />
                         </div>
                     </div>
-                    <p className="Exchange">The current Exchange Rate is: {this.state.exchange}</p>
+                    <p className="exchange">The current Exchange Rate is: {this.state.exchange}</p>
                 </div>}
             </div>
         );

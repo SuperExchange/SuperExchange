@@ -20,27 +20,25 @@
 .StockHeader {
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
     font-weight: 400;
-    margin-left: 70px;
 }
 
-.StockHeaderTitle > h1{
+.StockHeaderTitle > h2{
     color: #4C4C66;
+    font-size: 1.9em;
     padding-bottom: 10px;
 }
 
 .StockHeaderTitle > p{
     color: #6F6C99;
     font-size: 0.9em;
-    padding-bottom: 45px;
 }
 
 /* company  */
 
-#stock {
-    padding: 2rem 4rem;
-    margin-top: 50px;
+.Stock {
+    width: 80vw;
+    padding: 3% 0 0 5%;
 }
 
 .StockData {
@@ -59,7 +57,7 @@
 .StockHeaderSearch {
     display: flex;
     align-items: flex-start;
-    
+    padding-right: 5%;
 }
 .StockHeaderSearch input {
     font-size: 1.2rem;
@@ -70,5 +68,8 @@
 .StockHeaderSearch button {
     border: none;
     background: transparent;
+}
+
+.StockHeaderSearch button img {
     height: 1.5rem;
 }

@@ -1,24 +1,29 @@
 .forex{
-    margin-top: 40px;
-    margin-left: 50px;
+    width: 80vw;
+    padding: 3% 0 0 5%;
 }
-.forex > h2{
+.forexHeader > h2{
     color: #4C4C66;
-    font-size: 1.95em;
+    font-size: 1.9em;
     padding-bottom: 10px;
 }
 
-.forex > p{
+.forexHeader > p{
     color: #6F6C99;
     font-size: 0.9em;
-    padding-bottom: 20%;
+    padding-bottom: 25%;
+}
+
+.exchange {
+    text-align: center;
 }
 
 /* EXCHANGE RATE */
 
 .forex_container{
+    margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     color: #6F6C99;
 }
 
@@ -36,17 +41,6 @@
     border: 1px solid #c9c5c5;
     background-color: #FEF8F8;
     border-radius: 2px;
-    margin: 20px 0px;
-    padding: 0 30px;
-}
-
-.amount1{
-    margin-left: 20px;
-    margin-right: 60px;
-}
-
-.amount2{
-    margin-left: 60px;
 }
 
 /* MIDDLE FLAG */

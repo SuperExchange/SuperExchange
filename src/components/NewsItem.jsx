@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/News.css"
 
 class NewsItem extends React.Component {
     state = {
@@ -15,7 +16,6 @@ class NewsItem extends React.Component {
     }
     getShortText(content) {
         let short = content.slice(0, 500)
-        console.log(short)
         return short;
     }
     render() {

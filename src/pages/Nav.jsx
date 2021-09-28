@@ -11,7 +11,7 @@ const Nav = () => {
                 </div>
             </h1>
 
-            <div class="divLink">
+            <div className="divLink">
                 <div >
                     <Link to="/" className="NavLink">
                         <img
