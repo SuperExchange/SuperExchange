@@ -8,13 +8,13 @@ import "../css/DashBoard.css"
 const DashBoard = () => {
     return (
         <div className="dashboard">
-            <header>
-                <h2 id="dashboardHeader">DashBoard</h2>
-                <p id="text">
+            <div id="dashBoardHeader">
+                <h2 id="dashboardHeaderH2">DashBoard</h2>
+                <p id="dashBoardHeaderText">
                     With all of the styling tool options available in today’s
                     market
                 </p>
-            </header>
+            </div>
             <section>
                 <div className="DashboardElement">
                     <DashStock />
