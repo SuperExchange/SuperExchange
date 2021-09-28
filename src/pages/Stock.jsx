@@ -44,27 +44,38 @@ class Stock extends Component {
             `https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords=${searchText}&apikey=${ApiKey}`
         )
             .then((response) => response.json())
+            // .then((json) => console.log(json));
             .then((json) => json.bestMatches)
             .then((bestMatches) =>
                 bestMatches.length > 0 ? bestMatches[0] : null
             )
-            .then((found) => this.setState({ symbol: found["1. symbol"] }))
+            .then((found) => {
+                // make an api call to get the data...
+                // this.setState({ loaded: false });
+                let symbolFound = found["1. symbol"];
+                console.log(symbolFound);
+            });
+        // console.log(
+        //     `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${symbolFound}&interval=30min&apikey=${ApiKey}`
+        // );
 
-            .catch((err) => console.log(err));
+        //         fetch(
+        //             `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${symbolFound}&interval=30min&apikey=${ApiKey}`
+        //         )
+        //             .then((response) => response.json())
+        //             .then((json) => console.log(json))
+        //             .catch((err) => console.log(err));
 
-        // make an api call to get the data...
-        this.setState({ loaded: false });
-        fetch(
-            `https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=${this.state.symbol}&interval=30min&apikey=${ApiKey}`
-        )
-            .then((response) => response.json())
-            .then((json) => json.bestMatches)
+        //         // this.setState({ symbol: symbolFound });
+        //     });
 
-            .then()
-            .catch((err) => console.log(err));
+        // // .then((found) => console.log(found))
+
+        // // .catch((err) => console.log(err));
     }
 
     componentDidMount() {
+        console.log("componentDidMount()");
         // check if the symbol is in the watchlist
         let index = watchList.findIndex(
             (elt) => elt.symbol === this.state.symbol
@@ -131,8 +142,8 @@ class Stock extends Component {
                         lastRefreshed={
                             this.state.loaded
                                 ? this.state.timeSeries.metaData[
-                                "3. Last Refreshed"
-                                ]
+                                      "3. Last Refreshed"
+                                  ]
                                 : ""
                         }
                         data={this.state.plotlyData}
