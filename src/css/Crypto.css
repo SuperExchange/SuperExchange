@@ -1,6 +1,9 @@
 .crypto {
     width: 70vw;
 }
+.crypto h1 {
+    padding: 5% 0 0 5%;
+}
 
 @media(max-width:414px){
     h1{

@@ -26,8 +26,8 @@ class NewsItem extends React.Component {
                     <div key={e.date} className="newsItem">
                         <div className="newsTitle">
                             <h2>{e.title}</h2>
-                            <h4>Tags: {e.tags[0]}, {e.tags[1]}, {e.tags[2]}</h4>
-                            <h4>Symbols: {e.symbols[0]}, {e.symbols[1]}</h4>
+                            <h3>Tags: {e.tags[0]}, {e.tags[1]}, {e.tags[2]}</h3>
+                            <h3>Symbols: {e.symbols[0]}, {e.symbols[1]}</h3>
                         </div>
                         <p>{this.getShortText(e.content)}...  <a href={e.link} target="_blank" rel="noopener noreferrer">Read more</a> </p>
                     </div>

@@ -1,15 +1,19 @@
 .news>div{
     width: 70vw;
     display: grid;
-    grid-template-columns: repeat(2, 45%);
+    grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(4, auto);
     grid-gap: 5%;
     padding: 5% 5%;
 }
 
-.newsItem h2, h4{
-    padding-bottom: 3%;
+.news>h2{
+    padding: 5% 0 0 5%;
 }
-.newsItem h4:last-of-type{
-    padding-bottom: 6%;
+
+.newsTitle>h2, .newsTitle>h3{
+    padding-bottom: 2%;
+}
+.newsTitle>h3:last-of-type{
+    padding-bottom: 4%;
 }

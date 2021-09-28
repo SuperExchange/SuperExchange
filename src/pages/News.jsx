@@ -4,7 +4,7 @@ import "../css/News.css"
 const News = () => {
     return (
         <div className="news">
-            <h2>News</h2>
+            <h1>News</h1>
             <NewsItem count={4} />
         </div>
     );
