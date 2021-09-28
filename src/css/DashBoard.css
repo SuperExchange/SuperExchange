@@ -23,7 +23,6 @@ h2{
 section{
 display: grid;
 grid-template-columns: repeat(2, 40%);
-grid-template-rows: repeat(4, auto);
 grid-gap: 80px;
 }
 
@@ -33,15 +32,3 @@ grid-gap: 80px;
 }
 
 
-/* Mobile Version */
-@media (max-width: 414px){
-  section{
-   display: block;
-  }
-  h2{
-    text-align: center;
-  }
-  #text{
-    text-align: center;
-  }
-}

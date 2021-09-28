@@ -1,0 +1,30 @@
+@media(max-width:414px){
+    body{
+        margin-top: 20%;
+        text-align: center;
+    }
+    input{
+        margin-top: 5%;
+        padding: 2%;
+        box-shadow: 0em 0em 0.5em black;
+        background-color: #FEF8F8;
+    }
+
+    .Amount{
+        margin-top: 5%;
+        
+        
+    }
+    .Exchange{
+    
+        margin-top: 15%;
+        margin-right: 5%;
+        margin-left:5%;
+        box-shadow: 0em 0em 0.5em black;
+
+    }
+    .ContentFlags{
+        margin-top: 5%;
+        
+    }
+}

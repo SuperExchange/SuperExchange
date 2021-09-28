@@ -1,4 +1,5 @@
 import React from 'react';
+import "../css/Forex.css"
 
 class Forex extends React.Component {
     constructor(props) {
@@ -43,13 +44,13 @@ class Forex extends React.Component {
                     <p>Want to kow how much is your money in other currenciest?</p>
                     <div className="forex_container">
                         <div>
-                            <p>Amount</p>
+                            <p className="Amount">Amount</p>
                             <input className="forexInput"
                                 type="number"
                                 onChange={() => this.handleChangeFromCurrency(this.state.exchange)}
                             />
                         </div>
-                        <div>
+                        <div className="ContentFlags">
                             <p>from</p>
                             <img className="currencyFlag" src="../img/flags/us.svg" alt="" />
                             <p>{this.state.currencyFromString}</p>
@@ -70,7 +71,7 @@ class Forex extends React.Component {
                             />
                         </div>
                     </div>
-                    <p>The Exchange Rate is {this.state.exchange}</p>
+                    <p className="Exchange">The Exchange Rate is {this.state.exchange}</p>
                 </div>}
             </div>
         );
