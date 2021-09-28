@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+.App {
+    display: flex;
+}
+
 /* .navBar {
     width: 20vw;
     height: 100vh;

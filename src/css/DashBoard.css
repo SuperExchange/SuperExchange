@@ -24,21 +24,28 @@ section {
     grid-gap: 80px;
 }
 
+<<<<<<< HEAD
 .DashStockGridHeader{
   font-size: 1em;  
   font-family: AvenirNorm;
 }
 
+=======
+.DashStockGridHeader {
+    font-size: 1em;
+    font-family: AvenirNorm;
+}
+>>>>>>> 62a6626efd4143450a833ea55691e80d1c777a93
 
 /* Mobile Version */
-@media (max-width: 414px){
-  section{
-   display: block;
-  }
-  h2{
-    text-align: center;
-  }
-  #text{
-    text-align: center;
-  }
+@media (max-width: 414px) {
+    section {
+        display: block;
+    }
+    h2 {
+        text-align: center;
+    }
+    #text {
+        text-align: center;
+    }
 }

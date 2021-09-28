@@ -1,7 +1,7 @@
 @font-face {
     font-family: HelvThin;
     src: url("./fonts/Helvetica-Neue-Font/Helvetica\ Neue\ UltraLight/Helv1.ttf");
-  }
+}
 
 @font-face {
     font-family: HelvThick;
@@ -13,12 +13,11 @@
     src: url("./fonts/Helvetica-Neue-Font/Helvetica\ Neue\ W01\ 66\ Medium\ It/Helv3.ttf");
 }
 
-
 .navBar {
     width: 20vw;
     height: 100vh;
     background-color: #fefaf9;
-    float: left;
+    /* float: left; */
 }
 
 .navBar > h1 {
@@ -26,43 +25,39 @@
     font-size: 1.1em;
     font-family: HelvThin;
     margin: 80px 40px 25px 50px;
-    
-
 }
 
-#super{
-    font-family: HelvThick ;
+#super {
+    font-family: HelvThick;
     font-weight: normal;
 }
 
-#logoPic{
-    width:1.5vw;
+#logoPic {
+    width: 1.5vw;
     /* margin: 0; */
-    padding-right: 15px; 
+    padding-right: 15px;
 }
 
-.divLink{
-    margin: 110px 60px 0px 65px ; 
-    
+.divLink {
+    margin: 110px 60px 0px 65px;
 }
 
-.divLink > div{
+.divLink > div {
     padding-bottom: 55px;
 }
 
-.NavLinkImage{
+.NavLinkImage {
     padding-right: 35px;
 }
 
-.NavLink{
+.NavLink {
     text-decoration: none;
-    color: #6F6C99;
+    color: #6f6c99;
 }
 
 /* Mobile Version */
-@media(max-width:414px){
-    .navBar{
-        display:none
+@media (max-width: 414px) {
+    .navBar {
+        display: none;
     }
 }
-
