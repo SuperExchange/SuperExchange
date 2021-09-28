@@ -1,12 +1,4 @@
-@font-face {
-    font-family: AvenirFett;
-    src: url("./fonts/Avenir/AvenirFett.otf");
-  }
 
-  @font-face {
-    font-family: AvenirNorm;
-    src: url("./fonts/Avenir/AvenirNormal.otf");
-  }
 
 
 
@@ -27,7 +19,3 @@ grid-template-rows: repeat(4, auto);
 grid-gap: 80px;
 }
 
-.DashStockGridHeader{
-  font-size: 1em;  
-  font-family: AvenirNorm;
-}
