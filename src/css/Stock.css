@@ -14,45 +14,61 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
 
-
-#stockHeader{
-    color: #4C4C66;
-    font-family: HelvThick ;
-}
-
-#stockText{
-    color: grey;
-    font-family: HelvThin;
-}
-
-#stock {
-    padding: 2rem 4rem;
-}
-
-.StockData {
-    padding-top: 2rem;
-}
-
+/* Headline  */
 .StockHeader {
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
+    font-weight: 400;
+    margin-left: 70px;
+}
+
+.StockHeaderTitle > h1{
+    color: #4C4C66;
+    padding-bottom: 10px;
+}
+
+.StockHeaderTitle > p{
+    color: #6F6C99;
+    font-size: 0.9em;
+    padding-bottom: 45px;
+}
+
+/* company  */
+
+#stock {
+    padding: 2rem 4rem;
+    margin-top: 50px;
+}
+
+.StockData {
+    padding-top: 2rem;
+    margin-left: 70px;
+}
+
+.StockData >  h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    font-size: 1.95em;
 }
+
+/* Searchbar */
 
 .StockHeaderSearch {
     display: flex;
     align-items: flex-start;
+    
 }
 .StockHeaderSearch input {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border: none;
     background: #fef8f8;
 }
+    
 .StockHeaderSearch button {
     border: none;
     background: transparent;
-    height: 1.8rem;
+    height: 1.5rem;
 }

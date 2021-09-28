@@ -1,26 +1,25 @@
 .dashboard{
     margin-top: 50px;
     margin-left: 70px;
+    width:70vw;
 }
 
 #dashboardHeader{
     color: #4C4C66;
     font-size: 1.9em;
+    padding-bottom: 10px;
 }
 
 #text {
     color: #6f6c99;
+    font-size: 0.8em;
+    padding-bottom: 40px;
 }
 
-.dashboard{
-    width: 70vw;
-}
-
-section {
-    display: grid;
-    grid-template-columns: repeat(2, 40%);
-    grid-template-rows: repeat(4, auto);
-    grid-gap: 80px;
+section{
+display: grid;
+grid-template-columns: repeat(2, 40%);
+grid-gap: 80px;
 }
 
 .DashStockGridHeader{

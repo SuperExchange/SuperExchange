@@ -1,4 +1,5 @@
 import React from 'react';
+import "../css/Forex.css"
 
 class Forex extends React.Component {
     constructor(props) {
@@ -42,17 +43,17 @@ class Forex extends React.Component {
                     <h2>Forex</h2>
                     <p>Want to kow how much is your money in other currenciest?</p>
                     <div className="forex_container">
-                        <div>
-                            <p>Amount</p>
+                        <div className="amount1">
+                            <p className="Amount">Amount</p>
                             <input className="forexInput"
                                 type="number"
                                 onChange={() => this.handleChangeFromCurrency(this.state.exchange)}
                             />
                         </div>
-                        <div>
-                            <p>from</p>
+                        <div className="ContentFlags">
+                            <p className="textForex">from</p>
                             <img className="currencyFlag" src="../img/flags/us.svg" alt="" />
-                            <p>{this.state.currencyFromString}</p>
+                            <p className="forexCurriency">{this.state.currencyFromString}</p>
                         </div>
                         <div>
                             <img className="currencyIcon" src="../img/icons/arrow-combined.svg" alt="" />
@@ -60,9 +61,9 @@ class Forex extends React.Component {
                         <div>
                             <p>in</p>
                             <img className="currencyFlag" src="../img/flags/eu.svg" alt="" />
-                            <p>{this.state.currencyToString}</p>
+                            <p className="forexCurriency">{this.state.currencyToString}</p>
                         </div>
-                        <div>
+                        <div className="amount2">
                             <p>Amount</p>
                             <input className="forexInput"
                                 type="number"
@@ -70,7 +71,7 @@ class Forex extends React.Component {
                             />
                         </div>
                     </div>
-                    <p>The Exchange Rate is {this.state.exchange}</p>
+                    <p className="Exchange">The current Exchange Rate is: {this.state.exchange}</p>
                 </div>}
             </div>
         );

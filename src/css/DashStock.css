@@ -3,11 +3,17 @@
     src: url("./fonts/Avenir/AvenirNormal.otf");
 }
 
+@font-face {
+    font-family: AvenirFett;
+    src: url("./fonts/Avenir/AvenirFett.otf");
+}
+
+
 .DashStockGrid {
     color: #333;
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
-    padding: 0.5rem 2rem;
+    grid-template-columns: 2fr 1fr 2fr;
+    padding: 0.5rem 1rem;
     font-family: AvenirNorm;
 }
 .DashStockGridHeader {
