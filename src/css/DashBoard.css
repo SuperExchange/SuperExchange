@@ -24,12 +24,6 @@ section {
     grid-gap: 80px;
 }
 
-<<<<<<< HEAD
-.DashStockGridHeader {
-    font-size: 1em;
-    font-family: AvenirNorm;
-}
-=======
 .DashStockGridHeader{
   font-size: 1em;  
   font-family: AvenirNorm;
@@ -48,4 +42,3 @@ section {
     text-align: center;
   }
 }
->>>>>>> 0793325be768c43d74eca2dfaea0c79f7314a51d
