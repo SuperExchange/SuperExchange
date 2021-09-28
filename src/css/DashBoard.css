@@ -1,24 +1,12 @@
-@font-face {
-    font-family: AvenirFett;
-    src: url("./fonts/Avenir/AvenirFett.otf");
-  }
 
-  @font-face {
-    font-family: AvenirNorm;
-    src: url("./fonts/Avenir/AvenirNormal.otf");
-  }
-
-
-
-h2{
-    color: #4C4C66;
+h2 {
+    color: #4c4c66;
     font-size: 1.7em;
-    
 }
 
-#text{
-    color: #6F6C99;
-} 
+#text {
+    color: #6f6c99;
+}
 
 section{
 display: grid;
@@ -31,4 +19,15 @@ grid-gap: 80px;
   font-family: AvenirNorm;
 }
 
-
+/* Mobile Version */
+@media (max-width: 414px) {
+    section {
+        display: block;
+    }
+    h2 {
+        text-align: center;
+    }
+    #text {
+        text-align: center;
+    }
+}
