@@ -1,9 +1,9 @@
 import NewsItem from "./NewsItem";
+import "../css/News.css"
 
 const DashNews = () => {
     return (
-        <div className="News">
-            <h1> News </h1>
+        <div>
             <NewsItem count={1} />
         </div>
     );
