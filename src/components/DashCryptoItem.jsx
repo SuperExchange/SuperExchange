@@ -12,7 +12,7 @@ class DashCryptoItem extends Component {
     render() {
         return (
             <div className="DashCryptoItem">
-                <div className="DashCryptoGrid crypto">
+                <div className="DashCryptoGrid">
                     <img src={`/img/crypto/${this.state.code.toLowerCase()}.svg`} alt={this.state.name} />
                     <p>{this.state.name}</p>
                     <p>
