@@ -3,7 +3,8 @@ import React from "react";
 class NewsItem extends React.Component {
     state = {
         news: [],
-        count: this.props.count
+        count: this.props.count,
+        content: ""
     }
 
     async componentDidMount() {
@@ -11,7 +12,11 @@ class NewsItem extends React.Component {
         const response = await fetch(url);
         const data = await response.json();
         this.setState({ news: data })
-        console.log(data)
+        console.log(this.news)
+    }
+    getShortText(content){
+        let short = content.slice(0,500)
+        return short;
     }
     render() {
 
@@ -20,8 +25,7 @@ class NewsItem extends React.Component {
                 {this.state.news.map((e) => (
                     <div key={e.date} className="newsItem">
                         <h4>{e.title}</h4>
-                        <p>{e.content}</p>
-
+                        <p>{this.getShortText(e.content)}... {/* <a href={}>Read more</a> */}</p>
                     </div>
                 ))}
             </div>

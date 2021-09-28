@@ -1,8 +1,9 @@
 import NewsItem from "../components/NewsItem";
+import "../css/News.css"
 
 const News = () => {
     return (
-        <div>
+        <div className="news">
             <NewsItem count={4} />
         </div>
     );
