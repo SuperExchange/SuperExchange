@@ -8,10 +8,15 @@ h2 {
     color: #6f6c99;
 }
 
-section{
-display: grid;
-grid-template-columns: repeat(2, 40%);
-grid-gap: 80px;
+.dashboard {
+    width: 70vw;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 40px;
 }
 
 .DashStockGridHeader{
