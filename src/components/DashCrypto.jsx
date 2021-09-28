@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import DashCryptoItem from './DashCryptoItem'
+import "../css/DashCrypto.css"
+
 
 class DashCrypto extends Component {
     constructor(props) {
@@ -20,21 +22,23 @@ class DashCrypto extends Component {
 
             let element = data["Realtime Currency Exchange Rate"];
 
-            this.setState({ currency: [...this.state.currency, { name: element["2. From_Currency Name"], exchange: element["5. Exchange Rate"] }] });
+            this.setState({ currency: [...this.state.currency, {code:element["1. From_Currency Code"], name: element["2. From_Currency Name"], exchange: element["5. Exchange Rate"] }] });
             //this.setState({ currency : [element["2. From_Currency Name"],element["5. Exchange Rate"]] })
         }))
     }
     render() {
         return (
-            <div className="DashStock">
+            <div className="DashCrypto">
                 {/* display as grid */}
-                <div className="DashStockGrid DashStockGridHeader">
+                <div className=" DashCryptoHeader DashCryptoGrid">
+                    <p></p>
                     <p>Name</p>
                     <p>Price</p>
-                    <p></p>
+                    
                 </div>
                 {this.state.currency.map(e => {
                     return <DashCryptoItem key={e.name}
+                        code={e.code}
                         name={e.name}
                         exchange={e.exchange}
                     />

@@ -4,6 +4,7 @@ import DashCrypto from "../components/DashCrypto";
 import DashNews from "../components/DashNews";
 import "../css/DashBoard.css"
 
+
 const DashBoard = () => {
     return (
         <div className="dashboard">

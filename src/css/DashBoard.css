@@ -31,3 +31,17 @@ grid-gap: 80px;
   font-size: 1em;  
   font-family: AvenirNorm;
 }
+
+
+/* Mobile Version */
+@media (max-width: 414px){
+  section{
+   display: block;
+  }
+  h2{
+    text-align: center;
+  }
+  #text{
+    text-align: center;
+  }
+}

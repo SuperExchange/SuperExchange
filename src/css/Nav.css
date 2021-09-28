@@ -59,6 +59,10 @@
     color: #6F6C99;
 }
 
-
-
+/* Mobile Version */
+@media(max-width:414px){
+    .navBar{
+        display:none
+    }
+}
 

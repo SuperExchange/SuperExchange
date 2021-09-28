@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/DashNews.css"
 
 export default class News extends React.Component {
         state = { 

@@ -1,10 +1,11 @@
 import React from "react";
 import Plot from "react-plotly.js";
+import "../css/Crypto.css"
 
 class Plotly extends React.Component {
     render() {
         return (
-            <div>
+            <div className="plotly">
                 <Plot
                     data={[
                         {
